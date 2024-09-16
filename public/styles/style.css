@@ -57,3 +57,22 @@ section:first-child {
 .hero-image img {
   width: 80%;
 }
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.products {
+  grid-column: span 3;
+}
+
+/* product-card */
+.product-card-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.product-card-image {
+  background-color: gray;
+}
