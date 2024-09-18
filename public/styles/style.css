@@ -195,3 +195,21 @@ section:first-child {
 #orderAmount p {
   color: rgba(0, 0, 0, 0.8);
 }
+@media screen and (max-width: 576px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .product-card-section {
+    flex-direction: column;
+  }
+}
