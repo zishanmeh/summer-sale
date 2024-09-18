@@ -5,7 +5,7 @@
     "catagory": "Kitchenware",
     "price": 39.15,
     "rating": 3.0,
-    "image": ".././data/assets/prod1.png"
+    "image": "././data/assets/prod1.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "catagory": "Kitchenware",
     "price": 25.0,
     "rating": 0.0,
-    "image": ".././data/assets/prod2.png"
+    "image": "././data/assets/prod2.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "catagory": "Kitchenware",
     "price": 49.0,
     "rating": 4.0,
-    "image": ".././data/assets/prod3.png"
+    "image": "././data/assets/prod3.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "catagory": "Sportswear",
     "price": 49.0,
     "rating": 2.0,
-    "image": ".././data/assets/prod4.png"
+    "image": "././data/assets/prod4.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "catagory": "Sportswear",
     "price": 69.0,
     "rating": 4.0,
-    "image": ".././data/assets/prod5.png"
+    "image": "././data/assets/prod5.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "catagory": "Sportswear",
     "price": 159.0,
     "rating": 3.0,
-    "image": ".././data/assets/prod6.png"
+    "image": "././data/assets/prod6.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "catagory": "Furniture",
     "price": 185.0,
     "rating": 4.0,
-    "image": ".././data/assets/prod7.png"
+    "image": "././data/assets/prod7.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "catagory": "Furniture",
     "price": 299.0,
     "rating": 5.0,
-    "image": ".././data/assets/prod8.png"
+    "image": "././data/assets/prod8.png"
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "catagory": "Furniture",
     "price": 339.0,
     "rating": 5.0,
-    "image": ".././data/assets/prod9.png"
+    "image": "././data/assets/prod9.png"
   }
 ]
