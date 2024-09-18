@@ -86,7 +86,17 @@ async function showProducts(products, id) {
     cardDetails.appendChild(name);
     cardDetails.appendChild(price);
     card.addEventListener("click", () => {
+      //   Notification
+      const notificationBox = document.getElementById("notification-box");
+      notificationBox.style.display = "block";
+      const notification = document.getElementById("notification");
+      notification.textContent = `${item.name} added to cart`;
+      setTimeout(function () {
+        notification.textContent = "";
+        notificationBox.style.display = "none";
+      }, 2000);
       const listedCartItem = document.getElementById("listed-cart-item");
+
       const addedLi = document.createElement("li");
       addedLi.textContent = item.name;
       listedCartItem.appendChild(addedLi);
@@ -162,3 +172,17 @@ function purchaseModal(fullPrice, discountPrice, afterDiscountPrice) {
   orderAmount.appendChild(showDiscountPrice);
   orderAmount.appendChild(showAfterDiscountPrice);
 }
+
+// setTimeout(function() {
+//     console.log("This message is shown after 2 seconds");
+//   }, 2000);
+
+// function sendNotification(item) {
+//   const body = document.getElementById("notification");
+//   const notification = document.createElement("p");
+//   notification.textContent = `${item.name} added to cart`;
+//   body.appendChild(notification);
+//   setTimeout(function () {
+//     body.remove(notification);
+//   }, 2000);
+// }
