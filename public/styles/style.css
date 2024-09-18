@@ -8,6 +8,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+  background-color: rgba(248, 248, 248, 1);
 }
 section {
   max-width: 90%;
@@ -44,12 +45,14 @@ section:first-child {
 .hero-details-promo p:first-child {
   font-weight: bold;
 }
-.hero-details-promo p:last-child {
+.primary-btn {
   background-color: var(--primary-color);
   color: white;
   padding: 10px 14px;
   font-weight: 600;
   border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 .hero-image {
   text-align: center;
@@ -60,10 +63,61 @@ section:first-child {
 .main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 50px;
 }
 .products {
   grid-column: span 3;
+  margin-right: 30px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}
+.product-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.product-card-details p {
+  color: rgba(17, 17, 17, 0.5);
+}
+.product-card-details h1 {
+  color: #1111;
+}
+.product-card-details div {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#listed-cart-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.purchase hr {
+  margin: 15px auto;
+}
+#total {
+  margin: 8px auto;
+}
+.amount-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* product-card */
@@ -74,5 +128,70 @@ section:first-child {
   gap: 20px;
 }
 .product-card-image {
-  background-color: gray;
+  background-color: rgba(17, 17, 17, 0.05);
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.purchase h1 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.purchase input {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 12px 0px 0px 12px;
+}
+.cupon-input-box {
+  display: flex;
+}
+#apply-cupon-btn {
+  border-radius: 0px 12px 12px 0px;
+}
+/* Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+/* Modal Content */
+.modal-content {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move back by half the modal's width and height */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* You can adjust the width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.modal-content > p {
+  color: rgba(0, 0, 0, 0.5);
+}
+#orderAmount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#orderAmount p {
+  color: rgba(0, 0, 0, 0.8);
 }

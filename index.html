@@ -21,7 +21,7 @@
             <h1>Purchase TK 200 or above & get <span>20% off</span></h1>
             <div class="hero-details-promo">
               <p>Use Promo Code</p>
-              <p>SELL200</p>
+              <p class="primary-btn">SELL200</p>
             </div>
           </div>
           <div class="hero-image">
@@ -31,7 +31,7 @@
       </section>
     </header>
     <!-- main section -->
-    <main>
+    <main id="main">
       <section>
         <div class="main">
           <div class="products">
@@ -45,10 +45,32 @@
               <h1>Furniture</h1>
             </div>
           </div>
-          <div class="purchase"></div>
+          <div class="purchase" id="purchase">
+            <h1>Your cart</h1>
+            <!-- <div class="cupon-input">
+              <input type="text" id="user-cupon-code" />
+              <button id="apply-cupon-button">Apply</button>
+            </div> -->
+            <ol id="listed-cart-item"></ol>
+            <hr />
+            <div class="amount-total">
+              <div id="total"></div>
+              <button id="purchase-btn" style="display: none" class="primary-btn">Purchase</button>
+            </div>
+          </div>
         </div>
       </section>
-      <h1 id="h1"></h1>
+      <section>
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="./data/assets/congo.png" alt="Congratulation image" />
+            <p>you have purchesed order</p>
+            <div id="orderAmount"></div>
+              <button class="primary-btn">Home</button>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="public/index.js"></script>
   </body>
