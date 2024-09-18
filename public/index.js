@@ -3,7 +3,7 @@ let discount = 0;
 let total_price = 0;
 
 async function fetchData() {
-  const response = await fetch("data/products.json");
+  const response = await fetch("./././data/products.json");
   //   D:\Programming hero course\Summer sale\summer-sale\data\products.json
   //   data\products.json
   //
